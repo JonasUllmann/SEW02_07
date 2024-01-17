@@ -32,7 +32,7 @@ namespace SEW02_07_04_Wpf
             íf(helloknopf.IsChecked == true){
                 MessageBox.Show("Hello");
             }
-
+            
             else if(goodbyeknopf.IsChecked == true)
             {
                 MessageBox.Show("Goodbye");
