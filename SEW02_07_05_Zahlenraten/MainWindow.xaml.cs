@@ -52,11 +52,16 @@ namespace SEW02_07_05_Zahlenraten
         public void start()
         {
             Random rnd = new Random();
-            int rndmnum = rnd.Next(1, 100);
-            //tblsolution.Text = rndmnum.ToString();
-            int tries = 0;
+            rndmnum = rnd.Next(1, 100);
+            tblsolution.Text = rndmnum.ToString();
+            tries = 0;
+            time = 0;
 
         }
+
+        
+
+
         
 
 
@@ -105,6 +110,11 @@ namespace SEW02_07_05_Zahlenraten
             Triesblock.Text = tries.ToString();
             
 
+        }
+
+        private void btnreset_Click(object sender, RoutedEventArgs e)
+        {
+            start();
         }
     }
 }

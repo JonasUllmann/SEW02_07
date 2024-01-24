@@ -18,8 +18,8 @@
         <Button x:Name="Guessbutton" Content="Try!" HorizontalAlignment="Center" Margin="0,66,0,0" VerticalAlignment="Top" Width="128" Click="Button_Click"/>
         <TextBlock x:Name="Hint" HorizontalAlignment="Center" Margin="0,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Height="23" TextAlignment="Center"/>
         <TextBlock x:Name="tbltimer" HorizontalAlignment="Left" Margin="70,42,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66"/>
-        <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
         <TextBlock x:Name="tblsolution" HorizontalAlignment="Left" Margin="348,38,0,0" TextWrapping="Wrap" Text="Solution" VerticalAlignment="Top"/>
+        <Button x:Name="btnreset" Content="Reset" HorizontalAlignment="Left" Margin="395,-2,0,0" VerticalAlignment="Top" RenderTransformOrigin="434365752335.837,479874074018101" Click="btnreset_Click"/>
 
     </Grid>
 </Window>
