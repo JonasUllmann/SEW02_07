@@ -29,7 +29,10 @@ namespace SEW02_07_04_Wpf
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            íf(helloknopf.IsChecked == true){
+            
+
+            if(helloknopf.IsChecked == true)
+            {
                 MessageBox.Show("Hello");
             }
             

@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <RadioButton x:Name="helloknopf" Content="Hello" HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="helloknopf" Content="Hello" HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center"/>
         <RadioButton x:Name="goodbyeknopf" Content="Goodbye" HorizontalAlignment="Left" Margin="413,0,0,0" VerticalAlignment="Center"/>
         <Button Content="Display" HorizontalAlignment="Left" Margin="340,313,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,84,0,0" TextWrapping="Wrap" Text="Select a message option" VerticalAlignment="Top" Width="326" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,84,0,0" TextWrapping="Wrap" Text="Select a message option" VerticalAlignment="Top" Width="326"/>
 
 
 
