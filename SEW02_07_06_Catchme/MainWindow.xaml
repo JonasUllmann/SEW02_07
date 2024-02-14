@@ -1,0 +1,15 @@
+﻿<Window x:Class="SEW02_07_06_Catchme.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SEW02_07_06_Catchme"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnCatchme"  Content="Catch me if you can" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="68" Width="128" ClickMode="Hover"/>
+        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="0,0,0,0" Name="button1" Width="75" MouseEnter="button1_MouseEnter" IsTabStop="False"/>
+
+
+    </Grid>
+</Window>
