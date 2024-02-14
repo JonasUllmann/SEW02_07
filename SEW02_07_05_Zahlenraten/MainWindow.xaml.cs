@@ -59,12 +59,18 @@ namespace SEW02_07_05_Zahlenraten
 
         }
 
-        
 
 
-        
 
 
+
+        private void OnKeyDownHandler(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                Button_Click(sender, e);
+            }
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -82,9 +88,10 @@ namespace SEW02_07_05_Zahlenraten
             }
 
 
+
             else if (Convert.ToUInt32(Guess.Text) > 100 || Convert.ToUInt32(Guess.Text) < 0)
             {
-                Hint.Text = $"Deine Eingabe {Convert.ToUInt32(Guess.Text)} ist entweder kein Text oder außerhalb des Intervalls";
+                Hint.Text = $"Deine Eingabe {Convert.ToUInt32(Guess.Text)} ist entweder keine Zahl oder außerhalb des Intervalls";
             }
 
             else if (Convert.ToUInt32(Guess.Text) > rndmnum)
@@ -115,6 +122,7 @@ namespace SEW02_07_05_Zahlenraten
         private void btnreset_Click(object sender, RoutedEventArgs e)
         {
             start();
+            Guess.Text = "";
         }
     }
 }
