@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:SEW02_07_06_Catchme"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="btnCatchme"  Content="Catch me if you can" HorizontalAlignment="Center" Margin="0,178,0,0" VerticalAlignment="Top" Height="68" Width="128" ClickMode="Hover"/>
-        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="0,0,0,0" Name="button1" Width="75" MouseEnter="button1_MouseEnter" IsTabStop="False"/>
+    <Grid x:Name="meinmain">
+        <Button x:Name="btnCatchme"  Content="Catch me if you can" HorizontalAlignment="Left" Margin="301,217,0,0" 
+                VerticalAlignment="Top" Height="45" Width="120" RenderTransformOrigin="0.5,0.5" MouseEnter="btnCatchme_MouseEnter" Grid.Column="1" Click="btnCatchme_Click">
+        </Button>
+        <TextBlock x:Name="tbk" HorizontalAlignment="Left" Margin="78,84,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Grid.Column="1"/>
 
 
     </Grid>

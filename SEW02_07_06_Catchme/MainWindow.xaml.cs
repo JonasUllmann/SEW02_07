@@ -16,19 +16,30 @@ namespace SEW02_07_06_Catchme
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private Random rnd;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            rnd = new Random();
         }
 
-
-
-        private void button1_MouseEnter(object sender, MouseEventArgs e)
+        private void btnCatchme_MouseEnter(object sender, MouseEventArgs e)
         {
-            int maxLeft = Convert.ToInt32(Grid.ActualWidth - button1.Width);
-            int maxTop = Convert.ToInt32(Grid.ActualHeight - button1.Height);
-            Random rand = new Random();
-            button1.Margin = new Thickness(rand.Next(maxLeft), rand.Next(maxTop), 0, 0);
+
+            
+
+            btnCatchme.Margin = new Thickness(rnd.Next(1, 700), rnd.Next(1, 350), 0, 0);
+
+            
+
+        }
+
+        private void btnCatchme_Click(object sender, RoutedEventArgs e)
+        {
+            meinmain.Background = new SolidColorBrush(Colors.Red);
         }
     }
 }
